@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta lang="EN">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="navigation-menu">
+			<div class="logo">
+				<a href="#">Layout 1</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="search-form">
+
+				<div class="search">
+					<label>
+						<input type="text" id="myInput" onkeyup="search()" placeholder="Search..">		
+					</label>
+					
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+
+
+</header>
+<main>
+	<div class="container">
+		<div class="heading">
+			<h1>Projects</h1>
+			<h2>Secondary Text</h2>
+		</div>
+		<div id="projects" class="project-section">
+			<div class="project">
+				<div class="image-thumbnail">
+				  <img src="images/pic1.png" height="200"; width="355">
+					
+				</div>
+				<h4><a href="#">Blue Brain</a></h4>
+				<p>Blue Brain project is a research initiative to create an artificial digital rendition of a human brain.
+				</p>
+			</div>
+			<div class="project">
+				<div class="image-thumbnail">
+					<img src="images/detection.png" height="200"; width="355"/>
+				</div>
+				<h4><a href="#">Accident detection App</a></h4>
+				<p>SOSmart detects car accidents using the internal sensors of your smartphone,
+				</p>
+			</div>
+			<div class="project">
+				<div class="image-thumbnail">
+					<img src="images/traffic.png" height="200"; width="355">
+				</div>
+				<h4><a href="#">Traffic control</a></h4>
+				<p>By observing three minutes for silence meditation (it will have traffic control song play)
+				</p>
+			</div>
+			<div class="project">
+				<div class="image-thumbnail">
+					<img src="images/finger.png" height="200"; width="355">
+				</div>
+				<h4><a href="#">Fingerprint Based ATM System</a></h4>
+				<p>Fingerprint Based ATM is desktop application where fingerprint of the user is used as a auth.
+				</p>
+			</div>
+			<div class="project">
+				<div class="image-thumbnail">
+					<img src="images/login.png" height="200"; width="355">
+				</div>
+				<h4><a href="#">Login authentication </a></h4>
+				<p>authentication is the process of verifying who a user is, while authorization is the process of verifying what they have access to.
+				</p>
+			</div>
+			<div class="project">
+				<div class="image-thumbnail" height="200"; width="355">
+					<img src="images/js.png" height="200"; width="355">
+				</div>
+				<h4><a href="#">JavaScript drawing</a></h4>
+				<p>The browser contains some very powerful graphics programming tools, from the Scalable Vector Graphics (SVG) language,
+				</p>
+			</div>
+			<div class="project">
+				<div class="image-thumbnail">
+					<img src="images/engine.png" height="200"; width="355">
+				</div>
+				<h4><a href="#">Search engine result page</a></h4>
+				<p>Search Engine refers to a huge database of internet resources such as web pages, newsgroups, programs, images etc 
+				</p>
+			</div>
+			<div class="project">
+				<div class="image-thumbnail">
+					<img src="images/tribute.png" height="200"; width="355">
+				</div>
+				<h4><a href="#">Tribute page</a></h4>
+				<p>Tribute pages are a wonderful way to commemorate the life of your loved one, as well as helping others whose lives are touched by dementia
+				</p>
+			</div>
+			<div class="project">
+				<div class="image-thumbnail">
+					<img src="images/survey.png" height="200"; width="355">
+				</div>
+				<h4><a href="#">Survey form</a></h4>
+				<p>This roundup focuses on survey tools offering standout features above and beyond the basic survey capabilities
+				</p>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<div class="container">
+		<div class="copyright">
+			<p>Copyright &copy; <a href="">Your Website</a> 2014</p>
+		</div>
+	</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="custom.js"></script>
+
+<!-- // <script type="text/javascript">
+//  	$(document).ready(function(){
+//  		$("#myInput").click(function(){
+//  			$(".project").toggleClass("select");
+//  		});
+//  	});
+//  </script>
+ -->
+<script>
+const search = () => 
+{
+    //let input, filter, div1, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+   	//div1 = document.getElementById('projects');
+    div1 = document.getElementById('projects');
+    let a = div1.getElementsByClassName('project');
+   
+    for (i = 0; i < a.length; i++) {
+        let a1 = a[i].getElementsByTagName('a')[0];
+        txtValue = a1.textContent || a1.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+*{
+	box-sizing: border-box;
+}
+
+/*-------------------custom css-----------------------------------*/
+.container{
+	max-width: 1140px;
+	width: 100%;
+	margin :0 auto;
+}
+header{
+	background-color: #222222;
+	padding: 15px 0px;
+}
+.navigation-menu{
+	display: flex;
+	align-items: center;
+}
+header .logo a{
+	
+	text-decoration: none;
+	color: #606b6e;
+	font-size:24px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.navigation-menu nav ul li{
+	display: inline-block;
+	margin-left: 30px;
+}
+.navigation-menu nav ul li a{
+	text-decoration: none;
+	color: #606b6e;
+	font-size:18px;
+	line-height: 27px;
+	font-weight: 500;
+	transition: 0.3s all ease-in-out;
+}
+.navigation-menu nav ul li a:hover{
+	text-decoration: none;
+	color: white;
+
+}
+
+.search-form .search{
+	display: flex;
+	align-items:center; 
+}
+ 
+.search input{
+	height: 100%;
+	padding:10px 10px;
+ 	height: 100%;
+ 	background-color: #000;
+ 	color: #fff;
+ 	margin:0px 0px 0px 15px; 
+ 	border: none;
+ 	outline: none;
+}
+
+
+main{
+	padding:50px 0px; 
+}
+main .heading{
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+}
+
+main .heading h1{
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000;
+}
+
+main .heading h2{
+	font-size: 26px;
+	line-height: 38px;
+	font-weight: 400;
+	color: #7b7d7a;
+	margin-left: 10px;
+}
+
+
+.project-section{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    margin: 0px -15px;
+}
+.project{
+	max-width: 33%;
+	margin: 20px 0px;
+	padding: 10px 15px;
+}
+.project:hover{
+	border: 2px solid grey;
+	box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.1);
+}
+.project.select{
+	border: 2px solid blue;
+	box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.1);
+}
+
+.project .image-thumbnail{
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	background-color: #ccc;
+	margin-bottom: 15px;
+}
+img{
+	max-width: 100%;
+}
+
+
+.project h4 a{
+	text-decoration: none;
+	font-size: 24px;
+	line-height: 36px;
+	color: black;
+}
+
+.project p{
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 16px;
+	color: rgba(0,0,0,0.7);
+}
+
+footer .copyright{
+	border-top: 1px solid #ddd;
+	padding:50px 0px;  
+}
+footer .copyright p{
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: rgba(0,0,0,0.7);
+}
+footer .copyright p a{
+	color: rgba(0,0,0,0.7);	
+}
+
+
